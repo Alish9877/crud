@@ -1,0 +1,9 @@
+<h1>Books List</h1>
+<a href="/books/new">Add New Book</a>
+<ul>
+    <% books.forEach(book => { %>
+        <li>
+            <a href="/books/<%= book._id %>"><%= book.title %></a>
+        </li>
+    <% }) %>
+</ul>
